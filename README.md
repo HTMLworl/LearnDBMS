@@ -99,6 +99,11 @@ s/130534182/d92fbda3-f160-424f-9170-8770ef4af4ee)
 ![orderbyoutput jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/f998dc89-7116-41fe-85ea-b236734a956a)
 ![oroutput jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/18597f6f-aab4-4756-9974-44ecdb63d869)
 ![output jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/5c6d3ca3-b954-49ae-a1e7-265ad0191be3)
+![pcalling jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/9d937ac5-5b28-4b4a-b08c-5e4bdec8e476)
+![power jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/92f3452b-e244-4e34-b2da-1ad6592ec204)
+![poweroutput jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/eccfe394-c534-4872-8433-1042ea7e40dd)
+![primary jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/97929bcc-e626-4019-85f9-4a9e602abff8)
+
 
 
 
