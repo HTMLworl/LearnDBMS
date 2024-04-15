@@ -78,6 +78,18 @@ rnDBMS/assets/130534182/03993fd1-23e4-439a-a6c3-1b7a11ef38e1)
 ![maxoutput jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/f574968b-529a-4d0e-8d0b-6b91195ab039)
 ![min jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/dd08324e-ce39-4119-882e-e22ced1f8904)
 ![minoutput jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/b4e3838e-2594-46f6-b673-3ad2c9a05e3a)
+![minus jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/9ecc70c8-52d1-4504-8572-9f44aa2fd090)
+![minusoutput jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/2385739c-30bd-4b4d-a60f-2d618953780f)
+![mod jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/5498c059-6b8f-4366-adae-b16819f404c9)
+![modoutput jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/cbe0612b-0077-40d7-81c9-2db146312f5d)
+![monthbetween](https://github.com/HTMLworl/LearnDBMS/assets/130534182/60abc60f-845f-42e3-8c40-c54d5457e796)
+![nested jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/2e07cc07-e438-492b-9fb4-7a561f6786f1)
+![nestedoutput jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/7dd49ae0-6051-4339-a348-db553cd5c7b6)
+![next jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/3b8caa55-aed2-4d10-bdea-96b017b513ac)
+![no jnj](https://github.com/HTMLworl/LearnDBMS/asset
+![nooutput jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/59696fca-b92a-4818-af1c-21662e321d91)
+s/130534182/d92fbda3-f160-424f-9170-8770ef4af4ee)
+
 
 
 
