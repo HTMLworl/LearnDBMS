@@ -57,6 +57,18 @@ MS/assets/130534182/44d65bad-221a-4dca-80aa-8d96a8879328)
 ![haven jnj](https://github.com/HTMLworl/Lea
 ![haveoutput jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/43693f25-58bd-4e30-9c4e-a8f2be55145d)
 rnDBMS/assets/130534182/03993fd1-23e4-439a-a6c3-1b7a11ef38e1)
+![initcap jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/96573006-b8bc-4e87-92ab-e9c6e68f7f71)
+![initcapoutput jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/0decbdd1-c230-40ee-be18-c6177cb3360e)
+![inoutput jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/7d040166-080b-4f59-9cb6-3fdbc1e000fc)
+![insert jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/1eee623f-1d3d-4a9e-a6a9-8327798db140)
+![inserttable jnj](https://github.com/HTMLworl/LearnDBMS/assets/1305
+![length jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/ce6627df-692a-4e2c-9dc9-6e7ea93f9b01)
+34182/b87066ca-6a4b-4852-b799-6875a2d24f78)
+![inter jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/9d781321-a437-481b-8abd-f1920ff7c03a)
+![interoutput jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/a16edc5b-5b9b-49dd-a791-09fb7516b97b)
+![jj jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/88f725c4-6e3e-49b6-ba84-0950d756a6d4)
+![last jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/aeb7fe76-fed2-4fcd-9f29-c2ffed6d6588)
+
 
 
 
