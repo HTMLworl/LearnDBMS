@@ -17,4 +17,18 @@
 ![avgoutput jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/253992c6-e0a8-44f4-94a9-f0333229f422)
 ![between jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/0079f21a-1062-44fd-bb81-4b0a0f297dc0)
 ![betweenoutput jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/a3991e37-9b7d-4f55-b106-4e72f4fa3b34)
+![calling jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/dd467280-db0d-4088-b6b1-d41a14ae3922)
+![candi jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/13efb8ce-47d7-4de3-a590-a4aac3a5a5fa)
+![cartesian jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/64ba2f8e-d819-449e-aa33-7c93688dbe59)
+![commitoutput jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/d743a605-2920-4e4d-9e7f-0ea28e884ea9)
+![committable jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/e19c5b79-e717-4164-8efa-3e25dec84b1f)
+![compo jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/ebf1ec37-2310-483c-a4b7-0773c1795eb7)
+![concat jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/98cecc3e-4ef8-43b0-b107-1aa10fd53f79)
+![concatoutput jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/9f5b7614-120f-4b45-a0c5-53fa6732e068)
+![count jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/4cbb30cd-d685-4d48-8d32-06db047e4e76)
+![countoutput jnj](https://github.com/HTM
+![createindex jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/39abecb2-b80d-4413-8a2a-8ce4b7183be0)
+Lworl/LearnDBMS/assets/130534182/660b3e1e-2c55-4a59-ba83-c272cc41b6f9)
+![course jnj](https://github.com/HTMLworl/LearnDBMS/assets/130534182/2a2d517c-ae28-4913-b9d7-8785d60157ac)
+
 
