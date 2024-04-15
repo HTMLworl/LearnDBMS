@@ -1,0 +1,875 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.body
+{
+font-family:sans-serif;
+}
+.font
+{
+font-size:6vh;
+color:#49255B;
+}
+.inner
+{
+font-size:4vh;
+color:black;
+}
+.topic
+{
+font-size:5vh;
+color:rgba(45,10,49,255);
+}
+.photo img
+{
+margin-left:25vh;
+}
+.menu_bar
+{
+background-color:rgba(45,10,49,255);
+height:95px;
+width:100%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding: 0 0.1px;
+position:sticky;
+top:0;
+
+}
+.logo button
+{
+width:27vh;
+color:#fff;
+margin-left:20px;
+background-image:linear-gradient(to left,#FDA7DF,#9980FA,#FDA7DF);
+font-size:30px;
+border-radius:25px;
+}
+.menu_bar ul
+{
+list-style:none;
+display:flex;
+}
+.menu_bar ul li
+{
+padding:10px 30px;
+position:relative;
+}
+.menu_bar ul li a
+{
+color:white;
+text-decoration:none;
+font-size:20px;
+transition:all 0.3s;
+}
+.menu_bar
+{
+color:white;
+}
+.menu_bar ul li a:hover
+{
+background-image:linear-gradient(to left,#FDA7DF,#9980FA,#FDA7DF);
+-webkit-background-clip:text;
+color:transparent;
+}
+.dropdown_menu
+{
+display:none;
+}
+.menu_bar ul li:hover .dropdown_menu
+{
+display:block;
+position:absolute;
+left:0;
+top:100%;
+background-color:rgba(45,10,49,255);
+right:1px;
+}
+.dropdown_menu ul 
+{
+display:block;
+margin:10px;
+}
+.dropdown_menu ul li
+{
+width:150px;
+padding:10px;
+}
+.search input
+{
+height:20px;
+width:90%;
+margin-top:1vh;
+border:none;
+outline:none;
+background-color:black;
+background:transparent;
+border-bottom:2px solid white;
+font-size:15px;
+color:white;
+}
+.search i
+{
+border-bottom:0.7vh solid white;
+}
+
+</style>
+</head>
+<body>
+<div class="menu_bar">
+<div class="logo">
+<button><b>DBMS</b></button>
+</div>
+<ul>
+<div class="search">
+<input type="text" name="" id="find" placeholder="search topics" onkeyup="search()" style="color:white"><i class="fa-solid fa-magnifying-glass" style="color: #B197FC;"></i>
+</div>
+<li><a href="phase1.html">PL/SQL</a></li>
+<li>
+<a href="ww">ABOUT <i class="fas fa-caret-down"></i></a>
+<div class="dropdown_menu">
+<ul>
+<li><a href="ww">location</a></li>
+<li><a href="login.html">sign in</a></li>
+</ul>
+</ul>
+</div>
+</div><br>
+<div class="product">
+<div class="font">
+<b>What is SQL ?</b><br>
+</div>
+<div class="inner">
+<p style="color:black">SQL stands for Structured Query Language and is a computer language that we use to interact with a relational database. SQL is a tool for organizing, managing, and retrieving archived data from a computer database. The original name was given by IBM as Structured English Query Language, abbreviated by the acronym SEQUEL. When data needs to be retrieved from a database, SQL is used to make the request. The DBMS processes the SQL query retrieves the requested data and returns it to us. Rather, SQL statements describe how a collection of data should be organized or what data should be extracted or added to the database.<br><br>
+In common usage, SQL encompasses DDL and DML commands for CREATE, UPDATE, modified, or other operations on database structure.</p>
+</div>
+</div>
+<div class="product">
+<div class="font">
+<b>What do you mean by DBMS ?</b>
+</div>
+<div class="inner">
+<p> Database Management System (DBMS) is a software system that is designed to manage and organize data in a structured manner. It allows users to create, modify, and query a database, as well as manage the security and access controls for that database.<br><br>
+
+DBMS provides an environment to store and retrieve the data in coinvent and efficient manner.</p>
+</div>
+</div>
+
+<div class="font">
+<b>Topics of SQL</b>
+</div>
+<div class="product">
+<div class="topic">
+<ul>
+<li><u>Database Languages</u></li>
+</ul>
+</div>
+<div class="inner">
+<p>Database languages, commonly referred to as query languages, are a type of programming language that programmers use to define and access data. Within the database management system(DBMS), these languages enable users to perform tasks such as: Restricting data access. Defining and modifying data.Some languages are:</p>
+</div>
+<b><p style="font-size:22px">1 data definiton language (DDL)</p></b>
+<div class="inner">
+<p>The DDL stands for Data Definition Language, Which is used for define the database’s internal structure and Pattern of the Database.
+Basically, The DDL is used for creating tables, indexes, constraints, and schema in the Database.
+By using DDL statements we can able to create the architecture of the required database.</p>
+<ul>
+<li><b>creates:</b> It is one the command in DDL which is used for creating objects in database means creating Tables, Users, Triggers, functions and other objects. Here I will show how to create a table by using create command from DDL.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="createtable.jnj.PNG"><br>
+<img src="desctable.jnj.PNG">
+</div><br>
+<li><b>alter:</b> It is one the command in DDL which is used for change or alter the structure of the database or table. I already created students table with some columns you can see in the above image. Now by using Alter command I add new column that weight to the students table.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="altertable.jnj.PNG"><br>
+<img src="alteroutput.jnj.PNG">
+</div><br>
+<li><b>drop:</b> This Drop command is used for delete objects from the database. In this example I drop the students table.<br><br>
+EXAMPLE:</li>
+<div class="photo">
+<img src="droptable.jnj.PNG">
+</div>
+<li><b>truncate:</b> Truncate command is used for remove all records from a table. Now I remove rows from the Student table.<br><br>
+EXAMPLE:</li>
+<div class="photo">
+<img src="truncatetable.jnj.PNG">
+</div>
+</ul>
+</div>
+<b><p style="font-size:22px">2 Data manipulation language(DML)</p></b>
+<div class="inner">
+<pThe Data Manipulation Language is used to Manipulate the data in the database by using different commands. In this category we can able to perform Insert new data into Table, Update existing data in the Table, Delete Data from the Table and other functions we can perform on data by using these DML commands. Below I listed those commands for your reference.</p>
+<ul>
+<li><b>select:</b> The Select command is used for select required data based on conditions from a existing Table. Here I select all data from the student Table.<br><br>
+EXAMPLE:</li>
+<div class="photo">
+<img src="selecttable.jnj.PNG"><br>
+<img src="selectoutput.jnj.PNG">
+</div><br>
+<li><b>insert:</b> The Insert command is used for inserting new data into Table.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="inserttable.jnj.PNG"><br>
+<img src="selectoutput.jnj.PNG">
+</div><br>
+<li><b>update:</b> The Update command is used for update information In the Table. Now I will update name John Doe to Roman in the ClassMemebers Table. Below I provide that Example you can update any row or columns data.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="updatetable.jnj.PNG"><br>
+<img src="updateoutput.jnj.PNG">
+</div><br>
+</ul>
+</div>
+<b><p style="font-size:22px">3 Data control language (DCL)</p></b>
+<div class="inner">
+<p>The DCL stands for Data Control Language means these commands are used to retrieve the saved data from database. And one more thing is the DCL execution is Transactional that means It have roll back parameters. we have two tasks under the Data Control Language below I listed them.</p>
+<ul>
+<li><b>Grant:</b> Basically The grant command is used for provide database access to the new user. Here I create one user then I give the access to the database.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="granttable.jnj.PNG">
+<div><br>
+<li><b>Revoke:</b> The Revoke command is used to to take back database access from the used.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="revoketable.jnj.PNG">
+</div><br>
+</ul>
+</div>
+<b><p style="font-size:22px">4 Transaction control language (TCL)</p></b>
+<div class="inner">
+<p>The TCL full form is Transaction Control Language commands are used to run the changes made by the DML commands And one more thing is TCL can be grouped into a logical transaction. And We have two different commands in this category below I listed them for reference.</p>
+<ul>
+<li><b>Commit:</b> The Commit command is used for save the transaction in the database and changes are made by the DML statements.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="committable.jnj.PNG"><br>
+<img src="commitoutput.jnj.PNG">
+<div><br>
+<li><b>Rollback:</b> Rollback command is used for restore the database to original state from last commit.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="rollback.jnj.PNG">
+</div><br>
+</ul>
+</div>
+</div>
+<div class="product">
+<div class="topic">
+<ul>
+<li><u>Joins</u></li>
+</ul>
+</div>
+<div class="inner">
+<p>JOINS in SQL are commands which are used to combine rows from two or more tables, based on a related column between those tables.  There are predominantly used when a user is trying to extract data from tables which have one-to-many or many-to-many relationships between them.<br></p>
+<h2>Types of joins</h2>
+
+<ul>
+<li><b>Equi join:</b> SQL EQUI JOIN performs a JOIN against equality or matching column(s) values of the associated tables. An equal sign (=) is used as comparison operator in the where clause to refer equality.
+You may also perform EQUI JOIN by using JOIN keyword followed by ON keyword and then specifying names of the columns along with their associated tables to check equality<br><br>
+EXAMPLE:</li>
+<div class="photo">
+<img src="qui.jnj.PNG"><br>
+<img src="equioutput.jnj.PNG">
+</div><br>
+<li><b>Cartesian join:</b> The CARTESIAN JOIN is also known as CROSS JOIN. In a CARTESIAN JOIN there is a join for each row of one table to every row of another table. This usually happens when the matching column or WHERE condition is not specified.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="cartesian.jnj.PNG">
+</div><br>
+<li><b>Self join:</b> Self Join, as its name suggests, is a type of join that combines the records of a table with itself.<br><br>
+Suppose an organization, while organizing a Christmas party, is choosing a Secret Santa among its employees based on some colors. It is designed to be done by assigning one color to each of its employees and having them pick a color from the pool of various colors. In the end, they will become the Secret Santa of an employee this color is assigned to.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="self.jnj.PNG"><br>
+<img src="selfoutput.jnj.PNG">
+</div>
+</ul>
+</div>
+</div>
+<div class="product">
+<div class="topic">
+<ul>
+<li><u>Set Operators</u></li>
+</ul>
+</div>
+<div class="inner">
+<p>SET operators are used to combine information of similar type from one or more than one table. At first sight this look similar to SQL join although there is big difference. SQL joins tends to combine columns from different tables, SET operators combine result from two or more queries into one result.</p>
+<p>Types of SET operators:</p>
+<ul>
+<li><b>Union:</b> The UNION operator could be used to find the result set or combination of two or more tables.<br><br>
+EXAMPLE:</li>
+<div class="photo">
+<img src="union.jnj.PNG"><br>
+<img src="unionoutput.jnj.PNG">
+</div><br>
+<li><b>Union All:</b> The SQL UNION ALL operator is used to combine the result sets of 2 or more SELECT statements. It does not remove duplicate rows between the various SELECT statements (all rows are returned). Each SELECT statement within the UNION ALL must have the same number of fields in the result sets with similar data types. <br><br>
+EXAMPLE:</li>
+<div class="photo">
+<img src="uniona.jnj.PNG"><br>
+<img src="unionaoutput.jnj.PNG">
+</div><br>
+<li><b>Intersect:</b> SQL INTERSECT operator combines two select statements and returns only the dataset that is common in both the statements. To put it simply, it acts as a mathematical intersection. In mathematics, the intersection of A and B is the common data present in both A and B.<br><br>
+EXAMPLE:</li>
+<div class="photo">
+<img src="inter.jnj.PNG"><br>
+<img src="interoutput.jnj.PNG">
+</div><br>
+<li><b>Minus: </b>The Minus Operator in SQL is used with two SELECT statements. The MINUS operator is used to subtract the result set obtained by first SELECT query from the result set obtained by second SELECT query.<br><br>
+EXAMPLE:</li>
+<div class="photo">
+<img src="minus.jnj.PNG"><br>
+<img src="minusoutput.jnj.PNG">
+</div>
+</ul>
+</div>
+</div>
+<div class="product">
+<div class="topic">
+<ul>
+<li><u>Views</u></li>
+</ul>
+</div>
+<div class="inner">
+<p> Views in SQL are a kind of virtual table. A view also has rows and columns like tables, but a view doesn’t store data on the disk like a table. View defines a customized query that retrieves data from one or more tables, and represents the data as if it was coming from a single source.<br><br>
+We can create a view by selecting fields from one or more tables present in the database. A View can either have all the rows of a table or specific rows based on certain conditions.</p><br>
+EXAMPLE:<br>
+<div class="photo">
+<img src="view.jnj.PNG"><br>
+</div><br>
+<p><b>Dropping a View</b></p>
+<div class="photo">
+<img src="drop.jnj.PNG">
+</div>
+</div>
+</div>
+<div class="product">
+<div class="topic">
+<ul>
+<li><u>Functions in sql</u></li>
+</ul>
+</div>
+<div class="inner">
+<p> Functions are very powerful feature of SQL used to maintain data items. SQL functions are built into oracle database and are available for use in varous approciate SQL statement. Functions are similar to operators in that they manipulate data items and return a result, Functions differ from operators in the format of their argument. This format enables them to operate on zero, one, two or more arguments.</p>
+</div>
+<h3>There are two types of function:</h3>
+<ul>
+<li style="font-size:23px">single-row functions</li>
+</ul>
+<div class="inner">
+<p>Single row functions can be character functions, numeric functions, date functions, and conversion functions. Note that these functions are used to manipulate data items. These functions require one or more input arguments and operate on each row, thereby returning one output value for each row. Argument can be a column, literal or an expression. Single row functions can be used in SELECT statement, WHERE and ORDER BY clause. Single row functions can be -</p>
+<h5><u>Character functions</u></h5>
+<ul>
+<li><b>Upper():</b> UPPER function converts a string to upper case.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="upper.jnj.PNG"><br>
+<img src="upperoutput.jnj.PNG">
+</div><br>
+<li><b>Lower():</b> LOWER function converts a string to lower case.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="lower.jnj.PNG"><br>
+<img src="loweroutput.jnj.PNG">
+</div><br>
+<li><b>Initcap():</b> INITCAP function converts only the initial alphabets of a string to upper case.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="initcap.jnj.PNG"><br>
+<img src="initcapoutput.jnj.PNG">
+</div><br>
+<h5><u>Character-manipulation functions</u></h5>
+<li><b>Concat():</b> CONCAT function concatenates two string values.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="concat.jnj.PNG"><br>
+<img src="concatoutput.jnj.PNG">
+</div>
+<li><b>Length():</b> LENGTH function returns the length of the input string.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="length.jnj.PNG"><br>
+<img src="lengthoutput.jnj.PNG">
+</div><br>
+<li><b>Substr():</b> SUBSTR function returns a portion of a string from a given start point to an end point.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="substr.jnj.PNG"><br>
+<img src="substroutput.jnj.PNG">
+</div>
+<h5><u>Date functions</u></h5>
+<li><b>Months_between():</b> MONTHS_BETWEEN function returns the count of months between the two dates.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="monthbetween.PNG">
+</div><br>
+<li><b>Add_months():</b> ADD_MONTHS function add 'n' number of months to an input date.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="addmonth.jnj.PNG"><br>
+<img src="addmonthoutput.jnj.PNG">
+</div>
+<li><b>Next_day():</b> NEXT_DAY function returns the next day of the date specified.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="next.jnj.PNG">
+</div><br>
+<li><b>Last_day():</b> lAST_DAY function returns last day of the month of the input date.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="last.jnj.PNG">
+</div><br>
+<h5><u>Number functions</u></h5>
+<li><b>Abs():</b> It returns the absolute value of a number.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="abs.jnj.PNG"><br>
+<img src="absoutput.jnj.PNG">
+</div><br>
+<li><b>Mod:</b> It returns the remainder (aka. modulus) of n divided by m.
+<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="mod.jnj.PNG"><br>
+<img src="modoutput.jnj.PNG">
+</div><br>
+<li><b>Floor():</b> It returns the absolute value of a number.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="floor.jnj.PNG"><br>
+<img src="flooroutput.jnj.PNG">
+</div><br>
+<li><b>Exp():</b> It returns e raised to the power of a number.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="exp.jnj.PNG"><br>
+<img src="expoutput.jnj.PNG">
+</div><br>
+<li><b>Power():</b> It returns m raised to the nth power.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="power.jnj.PNG"><br>
+<img src="poweroutput.jnj.PNG">
+</div><br>
+</ul>
+<ul>
+<li>Multi-row functions</li>
+</ul>
+<p>Multiple Row functions - Multiple row functions work upon group of rows and return one result for the complete set of rows. They are also known as Group Functions.</p>
+<ul>
+<li><b>Count:</b>This function returns the number of rows in the table that satisfies the condition specified in the WHERE clause. If the WHERE clause is not specified then the query returns the total number of rows in the table.</span><br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="count.jnj.PNG"><br>
+<img src="countoutput.jnj.PNG">
+</div><br>
+<li><b>Max:</b> This function is used to get the maximum value from a column.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="max.jnj.PNG"><br>
+<img src="maxoutput.jnj.PNG">
+</div><br>
+<li><b>Sum:</b> This function is used to get the sum of a numberic column.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="su.jnj.PNG"><br>
+<img src="sumoutput.jnj.PNG">
+</div><br>
+<li><b>Min:</b> This function is used to get the minimum value from a column.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="min.jnj.PNG"><br>
+<img src="minoutput.jnj.PNG">
+</div><br>
+<li><b>Avg:</b> This function is used to get the average value of a numeric column.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="avg.jnj.PNG"><br>
+<img src="avgoutput.jnj.PNG">
+</div><br>
+</ul>
+</div>
+</div>
+<div class="product">
+<div class="topic">
+<ul>
+<li><u>Sql Operators</u></li>
+</ul>
+</div>
+<div class="inner">
+<p>Operators are the foundation of any programming language. We can define operators as symbols that help us to perform specific mathematical and logical computations on operands. In other words, we can say that an operator operates the operands. SQL operators have three different categories.</p>
+<ul>
+<li><b>Arithematic operators:</b> We can use various arithmetic operators on the data stored in the tables. Arithmetic Operators are:+,-,/ etc<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="arith.jnj.PNG"><br>
+<img src="arithoutput.jnj.PNG">
+</div>
+<li><b>Comparison operators:</b> Another important operator in SQL is a comparison operator, which is used to compare one expression’s value to other expressions. SQL supports different types of comparison operator like: =,>,<,>= etc.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="equal.jnj.PNG"><br>
+<img src="equaloutput.jnj.PNG">
+</div>
+<li><b>Logical operators:</b> The Logical operators are those that are true or false. They return true or false values to combine one or more true or false values.Logical operators like:AND,OR,NOT etc.<br><br>
+EXAMPLE:</li><br>
+<li><b>AND:</b> If you want to select rows that must satisfy all the given condition, you can use the logical operator AND.</li>
+<div class="photo">
+<img src="and.jnj.PNG"><br>
+<img src="andoutput.jnj.PNG">
+</div>
+<li><b>OR:</b> If you want to select rows that satisy at least one of the given conditions, you can use the logical operator, OR etc</li>
+<div class="photo">
+<img src="or.jnj.PNG"><br>
+<img src="oroutput.jnj.PNG">
+</div>
+<li><b>NOT:</b> If you want to find rows that do not satisfy a condition, you can use the logical operator, NOT.</li>
+<div class="photo">
+<img src="not.jnj.PNG"><br>
+<img src="notoutput.jnj.PNG">
+</div>
+<li><b>Special operators:</b> There are some special operators available in SQL which are used to enhance the search capabilities of a SQL query. They are "LIKE","IN" and "BETWEEN" operators.</li><br>
+
+<li><b>Like operator:</b> SQL LIKE operator is used with the WHERE clause to search for a specified pattern in a column. LIKE operator finds and returns the rows that fit in the given pattern</li>
+<p>EXAMPLE:</p>
+<div class="photo">
+<img src="like.jnj.PNG"><br>
+<img src="likeoutput.jnj.PNG">
+</div>
+<li><b>In operator:</b> The IN operator is used when you want to compare a column with more than one value.</li>
+<p>EXAMPLE:</p>
+<div class="photo">
+<img src="in.jnj.PNG"><br>
+<img src="inoutput.jnj.PNG">
+</div>
+<li><b>Between operator:</b> The BETWEEN operator is used to compare data for a range of valus.</li>
+<p>EXAMPLE:</p>
+<div class="photo">
+<img src="between.jnj.PNG"><br>
+<img src="betweenoutput.jnj.PNG">
+</div>
+</ul>
+</div>
+<div class="product">
+<div class="topic">
+<ul>
+<li>Nested queries (Query within Query)</li>
+</ul>
+</div>
+</div>
+<div class="inner">
+<p>In SQL, a nested query involves a query that is placed within another query. Output of the inner query is used by the outer query. A nested query has two SELECT statements: one for the inner query and another for the outer query.</p><br>
+EXAMPLE:<br>
+<div class="photo">
+<img src="">
+</div><br>
+<p>Special operators in sub queries</p>
+<ol>
+<li><b>Exists:</b> This operator is used to check for the existence of values. It produces a boolean result. It takes a subquery as an argument and evalutes it ot true if the subquery produces any output and falst, if the subquery does not produce any output<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="exist.jnj.PNG">
+</div>
+<li<b>>Any:</b> The Any operator compares the lowest value from the set.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="any.jnj.PNG"><br>
+<img src="anuoutput.jnj.PNG">
+</div>
+<li><b>Some:</b> The SOME operator work same like ANY operator i.e it compares the lowest value from the set. This means both ANY and SOME operators are equivalent.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="some.jnj.PNG"><br>
+<img src="anuoutput.jnj.PNG">
+</div>
+<li><b>All:</b> The ALL operator compares the highest value from the set.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="all.jnj.PNG">
+</div>
+</ol>
+</div>
+</div>
+<div class="product">
+<div class="topic">
+<ul>
+<li><u>key</u></li>
+</ul>
+</div>
+<div class="inner">
+<p>Keys are one of the basic requirements of a relational database model. It is widely used to identify the tuples(rows) uniquely in the table. We also use keys to set up relations amongst various columns and tables of a relational database.</p>
+<p>Types of keys</p>
+<ul>
+<li><b>Candidate key:</b> The minimal set of attributes that can uniquely identify a tuple is known as a candidate key. For Example, STUD_NO in STUDENT relation.<br><br>
+EXAMPLE:</li>
+<div class="photo">
+<img src="candi.jnj.PNG">
+</div><br>
+<li><b>Primary key:</b> There can be more than one candidate key in relation out of which one can be chosen as the primary key. For Example, STUD_NO, as well as STUD_PHONE, are candidate keys for relation STUDENT but STUD_NO can be chosen as the primary key (only one out of many candidate keys).<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="primary.jnj.PNG"><br>
+<img src="prioutput.jnj.PNG">
+</div><br>
+<li><b>Super key:</b> The set of attributes that can uniquely identify a tuple is known as Super Key. For Example, STUD_NO, (STUD_NO, STUD_NAME), etc. A super key is a group of single or multiple keys that identifies rows in a table. It supports NULL values. <br><br>
+EXAMPLE: We have a given relation R(A,B,C,D,E,F) and we shall check for super keys by following given dependencies:</li><br>
+<div class="photo">
+<img src="super.jnj.PNG">
+</div><br>
+<li><b>Foreign key:</b> If an attribute can only take the values which are present as values of some other attribute, it will be a foreign key to the attribute to which it refers. The relation which is being referenced is called referenced relation and the corresponding attribute is called referenced attribute the relation which refers to the referenced relation is called referencing relation and the corresponding attribute is called referencing attribute. The referenced attribute of the referenced relation should be the primary key to it.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="student.jnj.PNG"><br>
+<img src="course.jnj.PNG"><br>
+<img src="foreign.jnj.PNG">
+</div><br>
+<li><b>Composite key:</b> Sometimes, a table might not have a single column/attribute that uniquely identifies all the records of a table. To uniquely identify rows of a table, a combination of two or more columns/attributes can be used.  It still can give duplicate values in rare cases. So, we need to find the optimal set of attributes that can uniquely identify rows in a table.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="compo.jnj.PNG">
+</div>
+</ul>
+</div>
+</div>
+<div class="product">
+<div class="topic">
+<ul>
+<li><u>SQL datatypes</u></li>
+</ul>
+</div>
+<div class="inner">
+<p>Each column in a database table is required to have a name and a data type.<br><br>
+An SQL developer must decide what type of data that will be stored inside each column when creating a table. The data type is a guideline for SQL to understand what type of data is expected inside of each column, and it also identifies how SQL will interact with the stored data.</p>
+<p>MySQL Data Types</p>
+<ul>
+<li><b>Char(size):</b> A FIXED length string (can contain letters, numbers, and special characters). The size parameter specifies the column length in characters - can be from 0 to 255. Default is 1</li><br>
+<li><b>Varchar(size):</b> A VARIABLE length string (can contain letters, numbers, and special characters). The size parameter specifies the maximum string length in characters - can be from 0 to 65535.</li><br>
+<li><b>Date:</b> A date. Format: YYYY-MM-DD. The supported range is from '1000-01-01' to '9999-12-31'.</li><br>
+<li><b>Long:</b> Allows whole numbers between -2,147,483,648 and 2,147,483,647.</li><br>
+<li><b>Number(p,s):</b> Fixed precision and scale numbers.
+Allows numbers from -10^38 +1 to 10^38 –1.
+The p parameter indicates the maximum total number of digits that can be stored (both to the left and to the right of the decimal point). p must be a value from 1 to 38. Default is 18.
+The s parameter indicates the maximum number of digits stored to the right of the decimal point. s must be a value from 0 to p. Default value is 0.</li>
+</ul>
+</div>
+</div>
+<div class="product">
+<div class="topic">
+<ul>
+<li><u>SQL Alias</u></li>
+</ul>
+</div>
+<div class="inner">
+<p>An alias is a substitute for the three-part name of a table or view. An alias can be defined at a local server and can refer to a table or view that is at the current server or a remote server. The alias name can be used wherever the table name or view name can be used to refer to the table or view in an SQL statement.<br><br>
+EXAMPLE:</p>
+<div class="photo">
+<img src="aliasf.jnj.PNG"><br>
+<img src="aliasoutput.jnj.PNG">
+</div>
+</div>
+</div>
+<div class="product">
+<div class="topic">
+<ul>
+<li><u>SQL Aggregate Functions</u></li>
+</ul>
+</div>
+<div class="inner">
+<p>Aggregate functions are often used with the GROUP BY clause of the SELECT statement. The GROUP BY clause splits the result-set into groups of values and the aggregate function can be used to return a single value for each group.</p>
+<p> The most commonly used SQL aggregate functions are:</p>
+<ul>
+<li><b>Count:</b> This function returns the number of rows in the table that satisfies the condition specified in the WHERE clause. If the WHERE clause is not specified then the query returns the total number of rows in the table.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="count.jnj.PNG"><br>
+<img src="countoutput.jnj.PNG">
+</div><br>
+<li><b>Max:</b> This function is used to get the maximum value from a column.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="max.jnj.PNG"><br>
+<img src="maxoutput.jnj.PNG">
+</div><br>
+<li><b>Sum:</b> This function is used to get the sum of a numberic column.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="su.jnj.PNG"><br>
+<img src="sumoutput.jnj.PNG">
+</div><br>
+<li><b>Min:</b> This function is used to get the minimum value from a column.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="min.jnj.PNG"><br>
+<img src="minoutput.jnj.PNG">
+</div><br>
+<li><b>Avg:</b> This function is used to get the average value of a numeric column.<br><br>
+EXAMPLE:</li><br>
+<div class="photo">
+<img src="avg.jnj.PNG"><br>
+<img src="avgoutput.jnj.PNG">
+</div><br>
+</ul>
+</div>
+</div>
+<div class="product">
+<div class="topic">
+<ul>
+<li><u>Quering Database Tables</u></li>
+</ul>
+</div>
+<div class="inner">
+<p>Queries are one of the things that make database so powerful. a "Query" refers to the action of retrieving data from the database. Usually, you will be selective with how much data you want to returned. If you have a lot of data in your database, you probably dont't to see everything. More likely, you will only want to see data that fits a certain criteria.</p>
+<b><p>Select Statement</p></b>
+<p>The SELECT Statement in SQL is used to retrieve or fetch data from a database. <br><br>
+We can fetch either the entire table or according to some specified rules. The data returned is stored in a result table. This result table is also called the result set. With the SELECT clause of a SELECT command statement, we specify the columns that we want to be displayed in the query result and, optionally, which column headings we prefer to see above the result table.</p>
+<p>EXAMPLE:</p>
+<div class="photo">
+<img src="selecttable.jnj.PNG"><br>
+<img src="selectoutput.jnj.PNG">
+</div>
+</div>
+</div>
+<div class="product">
+<div class="topic">
+<ul>
+<li><u>Conditional Retrieval Of Rows</u></li>
+</ul>
+</div>
+<div class="inner">
+<p>Conditional retrieval of rows from a database table is done by specifying the condition of the Where Clause of the Select statement.</p>
+<b><p>Where Clause</p></b>
+<p>WHERE keyword is used for fetching filtered data in a result set. It is used to fetch data according to particular criteria. WHERE keyword can also be used to filter data by matching patterns.<br></p>
+<p>EXAMPLE:</p>
+<div class="photo">
+<img src="where.jnj.PNG"><br>
+<img src="whereoutput.jnj.PNG">
+</div>
+</div>
+</div>
+<div class="product">
+<div class="topic">
+<ul>
+<li><u>Ordering The Result Of Query</u></li>
+</ul>
+</div>
+<div class="inner">
+<p>The order of rows returned in query result is undefined. SQL uses the ORDER BY clause to impose an order on the result of query. The ORDER BY clause is used with SELECT statement to sort result. Oracle sorts query results in ascending order by default.</p>
+<p>EXAMPLE:</p>
+<div class="photo">
+<img src="orderby.jnj.PNG"><br>
+<img src="orderbyoutput.jnj.PNG">
+</div>
+</div>
+</div>
+<div class="product">
+<div class="topic">
+<ul>
+<li><u>Grouping The Result Of Query</u></li>
+</ul>
+</div>
+<div class="inner">
+<p>The GROUP BY Statement in SQL is used to arrange identical data into groups with the help of some functions. i.e. if a particular column has the same values in different rows then it will arrange these rows in a group.</p>
+<p>EXAMPLE:</p>
+<div class="photo">
+<img src="group.jnj.PNG"><br>
+<img src="groupoutput.jnj.PNG">
+</div>
+<p><b>The Having Clause</b></p>
+<p>The HAVING clause was introduced in SQL to allow the filtering of query results based on aggregate functions and groupings, which cannot be achieved using the WHERE clause that is used to filter individual rows.</p>
+<p>EXAMPLE:</p>
+<div class="photo">
+<img src="haven.jnj.PNG"><br>
+<img src="have.jnj.PNG"><br>
+<img src="haveoutput.jnj.PNG">
+</div>
+</div>
+</div>
+<div class="product">
+<div class="topic">
+<ul>
+<li><u>Working With Null Values</u></li>
+</ul>
+</div>
+<div class="inner">
+<p>Null values are not 0 or a blank. It represents an unknown or inapplicable value. It can be compared using the relation or logical operators. The special operator 'IS' is used with the keyword 'NULL' to locate null values.</p>
+<p>EXAMPLE:</p>
+<div class="photo">
+<img src="null1.jnj.PNG"><br>
+<img src="null.jnj.PNG"><br>
+<img src="nulloutput.jnj.PNG">
+</div>
+</div>
+</div>
+<div class="product">
+<div class="topic">
+<ul>
+<li><u>Sequencing</u></li>
+</ul>
+</div>
+<div class="inner">
+<p>A sequence is a list of numbers, in an ordered manner. For example, {1, 2, 3} is a sequence and {3, 2, 1} is also sequence but a different sequence.</p>
+<p>EXAMPLE:</p>
+<div class="photo">
+<img src="sequence.jnj.PNG"><br>
+<img src="sequenceoutput.jnj.PNG">
+</div>
+<p>Dropping a Sequence</p>
+<div class="photo">
+<img src="dropsequence.jnj.PNG">
+</div>
+</div>
+</div>
+<div class="product">
+<div class="topic">
+<ul>
+<li><u>Index</u></li>
+</ul>
+</div>
+<div class="inner">
+<p>An index is a schema object. It is used by the server to speed up the retrieval of rows by using a pointer. It can reduce disk I/O(input/output) by using a rapid path access method to locate data quickly.<br><br>
+An index helps to speed up select queries and where clauses, but it slows down data input, with the update and the insert statements. Indexes can be created or dropped with no effect on the data. In this article, we will see how to create, delete, and use the INDEX in the database.</p>
+<p>There are two types of index</p>
+<ul>
+<li><b>Unique index:</b> An index is a schema object. It is used by the server to speed up the retrieval of rows by using a pointer. It can reduce disk I/O(input/output) by using a rapid path access method to locate data quickly.<br><br>
+An index helps to speed up select queries and where clauses, but it slows down data input, with the update and the insert statements. Indexes can be created or dropped with no effect on the data. In this article, we will see how to create, delete, and use the INDEX in the database.<br><br>
+EXAMPLE:</li>
+<div class="photo">
+<img src="createindex.jnj.PNG"><br>
+</div><br>
+<li><b>Non-unique:</b> You can define a non-unique index on any Column or set of Columns. Unlike a Primary or Unique Key, a non-unique index does not validate each row for a unique value but allows different rows to have the same value in the Column or set of Columns that are part of the index.<br><br>EXAMPLE:</li>
+<div class="photo">
+<img src="uniqueindex.jnj.PNG"><br>
+</div>
+<p>Dropping a index</p>
+<div class="photo">
+<img src="dropindex.jnj.PNG"><br>
+</div>
+</ul>
+</div>
+</div>
+<!-- javascript -->
+<script type="text/javascript">
+function search() {
+let filter = document.getElementById('find').value.toUpperCase();
+let item = document.querySelectorAll('.product');
+let l = document.getElementsByTagName('div');
+for(var i = 0;i<=l.length;i++){
+let a=item[i].getElementsByTagName('div')[0];
+let value=a.innerHTML || a.innerText || a.textContent;
+if(value.toUpperCase().indexOf(filter) > -1) {
+item[i].style.display="";
+}
+else
+{
+item[i].style.display="none";
+}
+}
+}
+</script>
+</body>
+</html>

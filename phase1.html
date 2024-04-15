@@ -1,0 +1,302 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.body
+{
+font-family:sans-serif;
+}
+.a
+{
+font-size:6vh;
+color:#49255B;
+margin-left:1vh;
+}
+.b
+{
+font-size:4vh;
+color:black;
+margin-left:1vh;
+}
+.c
+{
+font-size:5vh;
+color:rgba(45,10,49,255);
+}
+.d
+{
+font-size:3vh;
+margin-left:1vh;
+}
+.img
+{
+margin-left:5vh;
+}
+.menu_bar
+{
+background-color:rgba(45,10,49,255);
+height:95px;
+width:100%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding: 0 0.1px;
+position:sticky;
+top:0;
+}
+.logo button
+{
+width:27vh;
+color:#fff;
+margin-left:20px;
+background-image:linear-gradient(to left,#FDA7DF,#9980FA,#FDA7DF);
+font-size:30px;
+border-radius:25px;
+}
+.menu_bar ul
+{
+list-style:none;
+display:flex;
+}
+.menu_bar ul li
+{
+padding:10px 30px;
+position:relative;
+}
+.menu_bar ul li a
+{
+color:white;
+text-decoration:none;
+font-size:20px;
+transition:all 0.3s;
+}
+.menu_bar
+{
+color:white;
+}
+.menu_bar ul li a:hover
+{
+background-image:linear-gradient(to left,#FDA7DF,#9980FA,#FDA7DF);
+-webkit-background-clip:text;
+color:transparent;
+}
+.dropdown_menu
+{
+display:none;
+}
+.menu_bar ul li:hover .dropdown_menu
+{
+display:block;
+position:absolute;
+left:0;
+top:100%;
+background-color:rgba(45,10,49,255);
+right:1px;
+}
+.dropdown_menu ul 
+{
+display:block;
+margin:10px;
+}
+.dropdown_menu ul li
+{
+width:150px;
+padding:10px;
+}
+.search input
+{
+height:20px;
+width:90%;
+margin-top:1vh;
+border:none;
+outline:none;
+background-color:black;
+background:transparent;
+border-bottom:2px solid white;
+font-size:15px;
+color:white;
+}
+.search i
+{
+border-bottom:0.7vh solid white;
+}
+</style>
+</head>
+<body>
+<div class="menu_bar">
+<div class="logo">
+<button><b>DBMS</b></button>
+</div>
+<ul>
+<div class="search">
+<input type="text" name="" id="find" placeholder="search topics" onkeyup="search()" style="color:white"><i class="fa-solid fa-magnifying-glass" style="color: #B197FC;"></i>
+</div>
+<li><a href="phase2.html">SQL</a></li>
+<li>
+<a href="ww">ABOUT <i class="fas fa-caret-down"></i></a>
+<div class="dropdown_menu">
+<ul>
+<li><a href="ww">location</a></li>
+<li><a href="login.html">sign in</a></li>
+</ul>
+</ul>
+</div>
+</div><br>
+<div class="product">
+<div class="a">
+<b>What is PL/SQL ?</b><br>
+</div>
+<div class="b">
+<p>PL/SQL is a block structured language that enables developers to combine the power of SQL with procedural statements.All the statements of a block are passed to oracle engine all at once which increases processing speed and decreases the traffic.</p>
+</div>
+<div class="a">
+<b>Features Of PL/SQL</b><br>
+</div>
+<div class="b">
+<p>PL/SQL is basically a procedural language, which provides the functionality of decision making, iteration and many more features of procedural programming languages.
+PL/SQL can execute a number of queries in one block using single command.
+One can create a PL/SQL unit such as procedures, functions, packages, triggers, and types, which are stored in the database for reuse by applications.</p>
+</div>
+</div>
+<div class="a">
+<b><p>Topics Of PL/SQL</p></b>
+</div>
+<div class="product">
+<div class="c">
+<ul>
+<u><li>cursors</li></u>
+</ul>
+</div>
+<div class="b">
+<p>A cursor is a named control structure used by an application program to point to and select a row of data from a result set. Instead of executing a query all at once, you can use a cursor to read and process the query result set one row at a time.A cursor in a PL/SQL context is treated as a WITH HOLD cursor..</p>
+</div>
+<div class="c">
+<p>Types Of Cursors</p>
+</div>
+<div class="b">
+<ol>
+<li><b>Implicit cursors</b> are automatically created by Oracle whenever an SQL statement is executed, when there is no explicit cursor for the statement. Programmers cannot control the implicit cursors and the information in it.<br>
+Whenever a DML statement (INSERT, UPDATE and DELETE) is issued, an implicit cursor is associated with this statement. For INSERT operations, the cursor holds the data that needs to be inserted. For UPDATE and DELETE operations, the cursor identifies the rows that would be affected.</li>
+<p>EAMPLE: check inserted or not in table</p>
+<div class="image">
+<img src="table.jnj.PNG"><br>
+<img src="update.jnj.PNG"><br>
+<img src="output.jnj.PNG">
+</div><br>
+<li><b>Explicit cursors</b> are programmer-defined cursors for gaining more control over the context area. An explicit cursor should be defined in the declaration section of the PL/SQL Block. It is created on a SELECT Statement which returns more than one row.</li>
+<p>EXAMPLE: Display salary of all employee using explicit cursor.</p>
+<div class="image">
+<img src="table.jnj.PNG"><br>
+<img src="explicit.jnj.PNG">
+</div>
+</div>
+</div>
+<div class="product">
+<div class="c">
+<ul>
+<u><li>Procedures</li></u>
+</ul>
+</div>
+<div class="b">
+<p><b>PL/SQL</b> is a block-structured language that enables developers to combine the power of SQL with procedural statements.<br>
+A stored procedure in PL/SQL is nothing but a series of declarative SQL statements which can be stored in the database catalogue. A procedure can be thought of as a function or a method. They can be invoked through triggers, other procedures, or applications on Java, PHP etc.<br>
+All the statements of a block are passed to Oracle engine all at once which increases processing speed and decreases the traffic.
+</p>
+<div class="img">
+<img src="output.jnj.PNG"><br>
+<img src="procedure.jnj.PNG"><br><br>
+<img src="pcalling.jnj.PNG"><br>
+<img src="protable.jnj.PNG">
+</div>
+</div>
+</div>
+<div class="product">
+<div class="c">
+<ul>
+<u><li>Functions</li></u>
+</ul>
+</div>
+<div class="b">
+<p>Function can be used as a part of SQL expression i.e. we can use them with select/update/merge commands. One most important characteristic of a function is that, unlike procedures, it must return a value. </p>
+<div class="img">
+<img src="function.jnj.PNG"><br>
+<img src="calling.jnj.PNG">
+</div>
+</div>
+</div>
+<div class="product">
+<div class="c">
+<ul>
+<u><li>Triggers</li></u>
+</ul>
+</div>
+<div class="b">
+<p>Trigger is a statement that a system executes automatically when there is any modification to the database. In a trigger, we first specify when the trigger is to be executed and then the action to be performed when the trigger executes. Triggers are used to specify certain integrity constraints and referential constraints that cannot be specified using the constraint mechanism of SQL. </p>
+<div class="img">
+<img src="output.jnj.PNG"><br><br>
+<img src="trigger.jnj.PNG"><br><br>
+<img src="insert.jnj.PNG"><br>
+<img src="tupdate.jnj.PNG">
+</div>
+</div>
+</div>
+<div class="product">
+<div class="c">
+<ul>
+<u><li>Exception Handling</li></u>
+</ul>
+</div>
+<div class="b">
+<p>An exception is an error which disrupts the normal flow of program instructions. PL/SQL provides us the exception block which raises the exception thus helping the programmer to find out the fault and resolve it.<br><br>
+There are two types of exception defined in PL/SQL</p>
+<ul>
+<li><b>User-defined exception:</b>This type of users can create their own exceptions according to the need and to raise these exceptions explicitly raise command is used.</li><br>
+<li><b>Raise_Application error:</b> It is used to display user-defined error messages with error number whose range is in between -20000 and -20999. When RAISE_APPLICATION_ERROR executes it returns error message and error code which looks same as Oracle built-in error.</li>
+<p>EXAMPLE:</p>
+<div class="img">
+<img src="raised.jnj.PNG"><br>
+<img src="raisedoutput.jnj.PNG">
+</div><br>
+<li><b>System-defined exception:</b>These exceptions are predefined in PL/SQL which get raised WHEN certain database rule is violated.</li>
+<p>System-defined exceptions are further divided into two categories:</p>
+<li><b>Named system exception:</b> They have a predefined name by the system like ACCESS_INTO_NULL, DUP_VAL_ON_INDEX, LOGIN_DENIED etc. the list is quite big.</span></li><br>
+<li><b>NO_DATA_FOUND:</b> It is raised WHEN a SELECT INTO statement returns no rows. For eg:</li><br>
+<div class="img">
+<img src="no.jnj.PNG"><br>
+<img src="nooutput.jnj.PNG">
+</div><br>
+<li><b>TOO_MANY_ROWS:</b> It is raised WHEN a SELECT INTO statement returns more than one row.</li><br>
+<div class="img">
+<img src="too.jnj.PNG"><br>
+<img src="toooutpu.jnj.PNG">
+</div><br>
+<li><b>ZERO_DIVIDE =</b> Raises exception WHEN dividing with zero.</li><br>
+<div class="img">
+<img src="zero.jnj.PNG"><br>
+<img src="zerooutput.jnj.PNG">
+</div>
+</ul>
+</div>
+<!-- javascript -->
+<script type="text/javascript">
+function search() {
+let filter = document.getElementById('find').value.toUpperCase();
+let item = document.querySelectorAll('.product');
+let l = document.getElementsByTagName('div');
+for(var i = 0;i<=l.length;i++){
+let a=item[i].getElementsByTagName('div')[0];
+let value=a.innerHTML || a.innerText || a.textContent;
+if(value.toUpperCase().indexOf(filter) > -1) {
+item[i].style.display="";
+}
+else
+{
+item[i].style.display="none";
+}
+}
+}
+</script>
+</body>
+</html>
